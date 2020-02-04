@@ -12,8 +12,7 @@ public class Main {
         stack.push("One");
         stack.push("Two");
         stack.push("Three");
-        stack.push("Four");
-        stack.push("Five");
+        stack.push("Three");
 
         System.out.println(stack.getSize());
         System.out.println(stack.peek());
