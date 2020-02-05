@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -15,7 +15,9 @@ public class AIMovement : MonoBehaviour
 
         if (Vector3.Distance(transform.position, Player.position) >= MinDist)
             transform.position += transform.forward * MovementSpeed * Time.deltaTime;
-        if(Vector3.Distance(transform.position, Player.position) <= MaxDist)
+        if (Vector3.Distance(transform.position, Player.position) <= MaxDist)
+        {
             // Input Firing Script here
+        }
     }
 }
