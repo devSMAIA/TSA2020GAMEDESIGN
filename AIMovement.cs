@@ -9,24 +9,13 @@ public class AIMovement : MonoBehaviour
     [SerializeField] private float MaxDist = 10f;
     [SerializeField] private float MinDist = 5f;
 
-
-    void Start()
-    {
-
-    }
-
     void Update()
     {
         transform.LookAt(Player);
 
         if (Vector3.Distance(transform.position, Player.position) >= MinDist)
-        {
             transform.position += transform.forward * MovementSpeed * Time.deltaTime;
-        }
-
         if(Vector3.Distance(transform.position, Player.position) <= MaxDist)
-        {
             // Input Firing Script here
-        }
     }
 }
